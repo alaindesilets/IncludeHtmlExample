@@ -6,19 +6,12 @@
 
 <h1>Page 1</h1>
 
-<h2>Plain HTML inclusion</h2>
-The "plain HTML" content below is the inclusion of file "common.html".<p/>
-<h3>START OF common.html</h3>
-<div w3-include-html="common.html"></div>
-<h3>END OF common.html</h3>
+<h2>Script tags inclusion</h2>
 
-<!--
-    The above code shows that you can include some HTML.
-    Can we use this functionality to include some JS files, by creating
-    an HTML file that includes some <script> tags, and then including that
-    file???
--->
+<!-- This tag will be replaced by the content of file 'common-script-tags.html'.
+  That file contains a <script> tag which loads the JS file greetings.js -->
 <div w3-include-html="common-script-tags.html"></div>
+
 <script>
     function onHelloClick() {
         // alert("function onHelloClick says Hello!")
@@ -26,9 +19,6 @@ The "plain HTML" content below is the inclusion of file "common.html".<p/>
     }
 </script>
 
-<hr/>
-
-<h2>Script tags inclusion</h2>
 The two buttons below invoke methods that print an alert.
 
 <p/>
